@@ -105,62 +105,6 @@
           "defaultValue": 0,
           "min": 0,
           "required": false
-        },
-        {
-            "code": "ausa",
-            "title": "Stage - Amp",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
-        },
-        {
-            "code": "ausm",
-            "title": "Stage - Mid",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
-        },
-        {
-            "code": "auss",
-            "title": "Stage - Source",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
-        },
-        {
-            "code": "aucao",
-            "title": "Center - Amp Outer",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
-        },
-        {
-            "code": "aucai",
-            "title": "Center - Amp Inner",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
-        },
-        {
-            "code": "aucm",
-            "title": "Center - Mid",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
-        },
-        {
-            "code": "aucsi",
-            "title": "Center - Source Inner",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
-        },
-        {
-            "code": "aucso",
-            "title": "Center - Source Outer",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
         }
       ]
     },
@@ -309,6 +253,7 @@
             "Red": "Red Card"
           }
         },
+
         {
           "code": "co",
           "title": "Comments",
