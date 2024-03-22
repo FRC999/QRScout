@@ -263,11 +263,14 @@
           "title": "Offense Skill",
           "type": "select",
           "choices": {
-            "1": "Not Effective",
-            "2": "Average",
-            "3": "Very Effective",
+            "1": "Poor",
+            "2": "Not Effective",
+            "3": "Average",
+            "4": "Effective",
+            "5": "Very Effective",
             "x": "Not Observed"
           },
+          "defaultValue": "x",
           "required": false
         },
         {
@@ -275,9 +278,11 @@
           "title": "Defense Skill",
           "type": "select",
           "choices": {
-            "1": "Not Effective",
-            "2": "Average",
-            "3": "Very Effective",
+            "1": "Poor",
+            "2": "Not Effective",
+            "3": "Average",
+            "4": "Effective",
+            "5": "Very Effective",
             "x": "Not Observed"
           },
           "defaultValue": "x",
