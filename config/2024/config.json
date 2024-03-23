@@ -68,7 +68,7 @@
         },
         {
           "code": "auamp",
-          "title": "Amp Scored",
+          "title": "Auto Amp Scored",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -76,7 +76,7 @@
         },
         {
           "code": "auampm",
-          "title": "Amp Missed",
+          "title": "Auto Amp Missed",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -84,7 +84,7 @@
         },
         {
           "code": "ausc",
-          "title": "Speaker Scored",
+          "title": "Auto Speaker Scored",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -92,7 +92,7 @@
         },
         {
           "code": "auskpm",
-          "title": "Speaker Missed",
+          "title": "Auto Speaker Missed",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -107,60 +107,60 @@
           "required": false
         },
         {
-            "code": "ausa",
-            "title": "Stage - Amp",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
+          "code": "ausa",
+          "title": "AutoNote Stage-Amp",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": false
         },
         {
-            "code": "ausm",
-            "title": "Stage - Mid",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
+          "code": "ausm",
+          "title": "AutoNote Stage-Mid",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": false
         },
         {
-            "code": "auss",
-            "title": "Stage - Source",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
+          "code": "auss",
+          "title": "AutoNote Stage-Source",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": false
         },
         {
-            "code": "aucao",
-            "title": "Center - Amp Outer",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
+          "code": "aucao",
+          "title": "AutoNote Center-Amp Outer",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": false
         },
         {
-            "code": "aucai",
-            "title": "Center - Amp Inner",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
+          "code": "aucai",
+          "title": "AutoNote Center-Amp Inner",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": false
         },
         {
-            "code": "aucm",
-            "title": "Center - Mid",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
+          "code": "aucm",
+          "title": "AutoNote Center-Mid",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": false
         },
         {
-            "code": "aucsi",
-            "title": "Center - Source Inner",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
+          "code": "aucsi",
+          "title": "AutoNote Center-Source Inner",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": false
         },
         {
-            "code": "aucso",
-            "title": "Center - Source Outer",
-            "type": "boolean",
-            "defaultValue": false,
-            "required": false
+          "code": "aucso",
+          "title": "AutoNote Center-Source Outer",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": false
         }
       ]
     },
@@ -176,7 +176,7 @@
         },
         {
           "code": "tamps",
-          "title": "Amp Scored",
+          "title": "Teleop Amp Scored",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -184,7 +184,7 @@
         },
         {
           "code": "tampm",
-          "title": "Amp Missed",
+          "title": "Teleop Amp Missed",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -192,7 +192,7 @@
         },
         {
           "code": "tsc",
-          "title": "Speaker Scored",
+          "title": "Teleop Speaker Scored",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -200,7 +200,7 @@
         },
         {
           "code": "tsm",
-          "title": "Speaker Missed",
+          "title": "Teleop Speaker Missed",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -215,7 +215,7 @@
           "required": false
         },
         {
-          "code": "Fou/Tech",
+          "code": "tfoul",
           "title": "Teleop Foul",
           "type": "counter",
           "defaultValue": 0,
@@ -230,7 +230,7 @@
           "title": "End Position",
           "type": "select",
           "required": true,
-          "code": "epo",
+          "code": "epos",
           "choices": {
             "No": "No Climb",
             "Fc": "Failed Climb",
@@ -251,7 +251,7 @@
             "Sec": "Second on Chain",
             "Thir": "Third on Chain"
           },
-          "defaultValue": "Not Completed"
+          "defaultValue": "Not"
         }
       ]
     },
@@ -259,30 +259,30 @@
       "name": "Postmatch",
       "fields": [
         {
-          "code": "or",
+          "code": "offsk",
           "title": "Offense Skill",
           "type": "select",
           "choices": {
-            "1": "Poor",
-            "2": "Not Effective",
-            "3": "Average",
-            "4": "Effective",
             "5": "Very Effective",
+            "4": "Effective",
+            "3": "Average",
+            "2": "Not Effective",
+            "1": "Poor",
             "x": "Not Observed"
           },
           "defaultValue": "x",
           "required": false
         },
         {
-          "code": "dr",
+          "code": "defsk",
           "title": "Defense Skill",
           "type": "select",
           "choices": {
-            "1": "Poor",
-            "2": "Not Effective",
-            "3": "Average",
-            "4": "Effective",
             "5": "Very Effective",
+            "4": "Effective",
+            "3": "Average",
+            "2": "Not Effective",
+            "1": "Poor",
             "x": "Not Observed"
           },
           "defaultValue": "x",
