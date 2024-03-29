@@ -16,7 +16,8 @@
           "title": "Match Number",
           "type": "number",
           "required": true,
-          "code": "matchNumber"
+          "code": "matchNumber",
+          "preserveDataOnReset": true
         },
         {
           "title": "Robot",
@@ -24,14 +25,14 @@
           "required": true,
           "code": "robot",
           "choices": {
-            "R1": "Red 1",
-            "R2": "Red 2",
-            "R3": "Red 3",
-            "B1": "Blue 1",
-            "B2": "Blue 2",
-            "B3": "Blue 3"
+            "RL": "Red Low",
+            "RM": "Red Mid",
+            "RH": "Red High",
+            "BL": "Blue Low",
+            "BM": "Blue Mid",
+            "BH": "Blue High"
           },
-          "defaultValue": "R1",
+          "defaultValue": "RL",
           "preserveDataOnReset": true
         },
         {
@@ -207,8 +208,16 @@
           "required": false
         },
         {
+          "code": "tnp",
+          "title": "Teleop Note Passing",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
           "code": "cn",
-          "title": "Note in Trap?",
+          "title": "Notes in Trap",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -219,6 +228,7 @@
           "title": "Teleop Foul",
           "type": "counter",
           "defaultValue": 0,
+          "min": 0,
           "required": false
         }
       ]
@@ -226,6 +236,14 @@
     {
       "name": "Endgame",
       "fields": [
+        {
+          "code": "hn",
+          "title": "High Notes Made",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
         {
           "title": "End Position",
           "type": "select",
@@ -235,8 +253,8 @@
             "No": "No Climb",
             "Fc": "Failed Climb",
             "P": "Parked",
-            "Os": "Onstage",
-            "Sl": "Spotlight"
+            "Os": "Onstage (Climbed)",
+            "Sl": "Spotlight (Climbed + Note)"
           },
           "defaultValue": "No Climb"
         },
@@ -289,8 +307,8 @@
           "required": false
         },
         {
-          "code": "d",
-          "title": "Died",
+          "code": "pf",
+          "title": "Parts fell off",
           "type": "boolean",
           "defaultValue": false,
           "required": false
@@ -298,6 +316,13 @@
         {
           "code": "to",
           "title": "Tipped Over",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": false
+        },
+        {
+          "code": "d",
+          "title": "Died",
           "type": "boolean",
           "defaultValue": false,
           "required": false
