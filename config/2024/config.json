@@ -6,24 +6,23 @@
       "name": "Prematch",
       "fields": [
         {
+          "code": "scouter",
           "title": "Scouter Initials",
           "type": "text",
           "required": true,
-          "code": "scouter",
           "preserveDataOnReset": true
         },
         {
+          "code": "matchNumber",
           "title": "Match Number",
           "type": "number",
-          "required": true,
-          "code": "matchNumber",
-          "preserveDataOnReset": true
+          "required": true
         },
         {
+          "code": "robot",
           "title": "Robot",
           "type": "select",
           "required": true,
-          "code": "robot",
           "choices": {
             "RL": "Red Low",
             "RM": "Red Mid",
@@ -36,24 +35,37 @@
           "preserveDataOnReset": true
         },
         {
+          "code": "teamNumber",
           "title": "Team Number",
           "type": "number",
-          "required": true,
-          "code": "teamNumber"
+          "required": true
         },
         {
+          "code": "startpos",
+          "title": "Start Position",
+          "type": "select",
+          "required": true,
+          "choices": {
+            "amp": "Speaker Amp",
+            "cen": "Speaker Center",
+            "src": "Speaker Source",
+            "srcEnd": "Source End"
+          },
+          "defaultValue": "cen"
+        },
+        {
+          "code": "humanPlayer",
           "title": "Human Player at Amp",
           "type": "boolean",
           "required": false,
-          "defaultValue": false,
-          "code": "humanPlayer"
+          "defaultValue": false
         },
         {
+          "code": "noShow",
           "title": "No Show",
           "type": "boolean",
           "defaultValue": false,
-          "required": false,
-          "code": "noShow"
+          "required": false
         }
       ]
     },
@@ -61,11 +73,11 @@
       "name": "Autonomous",
       "fields": [
         {
-          "title": "Mobility?",
+          "code": "mvbon",
+          "title": "Move Bonus?",
           "type": "boolean",
           "defaultValue": false,
-          "required": false,
-          "code": "Mved"
+          "required": false
         },
         {
           "code": "auamp",
@@ -94,14 +106,6 @@
         {
           "code": "auskpm",
           "title": "Auto Speaker Missed",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
-        },
-        {
-          "code": "auf",
-          "title": "Auto Foul",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -162,6 +166,14 @@
           "type": "boolean",
           "defaultValue": false,
           "required": false
+        },
+        {
+          "code": "auf",
+          "title": "Auto Foul",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
         }
       ]
     },
@@ -216,7 +228,7 @@
           "required": false
         },
         {
-          "code": "cn",
+          "code": "nit",
           "title": "Notes in Trap",
           "type": "counter",
           "defaultValue": 0,
@@ -237,7 +249,7 @@
       "name": "Endgame",
       "fields": [
         {
-          "code": "hn",
+          "code": "hnm",
           "title": "High Notes Made",
           "type": "counter",
           "defaultValue": 0,
@@ -245,29 +257,29 @@
           "required": false
         },
         {
+          "code": "epos",
           "title": "End Position",
           "type": "select",
           "required": true,
-          "code": "epos",
           "choices": {
-            "No": "No Climb",
-            "Fc": "Failed Climb",
-            "P": "Parked",
-            "Os": "Onstage (Climbed)",
-            "Sl": "Spotlight (Climbed + Note)"
+            "no": "No Climb",
+            "fc": "Failed Climb",
+            "p": "Parked",
+            "os": "Onstage (Climbed)",
+            "sl": "Spotlight (Climbed + High Note)"
           },
           "defaultValue": "No Climb"
         },
         {
+          "code": "harmony",
           "title": "Harmony",
           "type": "select",
           "required": true,
-          "code": "harm",
           "choices": {
-            "Not": "Not Completed",
-            "Fir": "First on Chain",
-            "Sec": "Second on Chain",
-            "Thir": "Third on Chain"
+            "0": "Not Completed",
+            "1": "First on Chain",
+            "2": "Second on Chain",
+            "3": "Third on Chain"
           },
           "defaultValue": "Not"
         }
@@ -308,7 +320,7 @@
         },
         {
           "code": "pf",
-          "title": "Parts fell off",
+          "title": "Critical parts fell off",
           "type": "boolean",
           "defaultValue": false,
           "required": false
@@ -334,9 +346,9 @@
           "defaultValue": "No Card",
           "required": true,
           "choices": {
-            "No Card": "No Card",
-            "Yellow": "Yellow Card",
-            "Red": "Red Card"
+            "noCard": "No Card",
+            "yellow": "Yellow Card",
+            "red": "Red Card"
           }
         },
         {
