@@ -268,7 +268,7 @@
             "os": "Onstage (Climbed)",
             "sl": "Spotlight (Climbed + High Note)"
           },
-          "defaultValue": "No Climb"
+          "defaultValue": "no"
         },
         {
           "code": "harmony",
@@ -281,7 +281,7 @@
             "2": "Second on Chain",
             "3": "Third on Chain"
           },
-          "defaultValue": "Not"
+          "defaultValue": "0"
         }
       ]
     },
