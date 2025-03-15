@@ -88,12 +88,12 @@
           "formResetBehavior": "preserve",
           "defaultValue": "R1",
           "choices": {
-            "R1": "Red 1 - BARGE",
-            "R2": "Red 2 - CENTER",
-            "R3": "Red 3 - PROCESSOR",
-            "B1": "Blue 1 - BARGE",
-            "B2": "Blue 2 - CENTER",
-            "B3": "Blue 3 - PROCESSOR"
+            "R1": "Red 1",
+            "R2": "Red 2",
+            "R3": "Red 3",
+            "B1": "Blue 1",
+            "B2": "Blue 2",
+            "B3": "Blue 3"
           }
         },
         {
@@ -113,7 +113,7 @@
           "type": "select",
           "required": true,
           "code": "Prsp",
-          "formResetBehavior": "preserve",
+          "formResetBehavior": "reset",
           "defaultValue": "",
           "choices": {
             "Barge": "Barge",
