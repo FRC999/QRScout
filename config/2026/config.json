@@ -385,9 +385,9 @@
           "required": false,
           "code": "defSkill",
           "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": -2,
-          "max": 2,
+          "defaultValue": 3,
+          "min": 0,
+          "max": 5,
           "step": 1
         },
         {
