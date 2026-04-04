@@ -22,4 +22,9 @@ export default defineConfig({
     },
   },
   assetsInclude: ['assets/**/*'],
+  server: {
+    watch: {
+      include: ['config/**'],
+    },
+  },
 });

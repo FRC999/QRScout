@@ -5,7 +5,7 @@ import { Sections } from './components/Sections';
 import { CommitAndResetSection } from './components/Sections/CommitAndResetSection/CommitAndResetSection';
 import { ConfigSection } from './components/Sections/ConfigSection';
 import { ThemeProvider } from './components/ThemeProvider';
-import { useQRScoutState } from './store/store';
+import { useQRScoutState, resetToDefaultConfig } from './store/store';
 
 import { StatsigProvider, useClientAsyncInit } from '@statsig/react-bindings';
 import { runStatsigAutoCapture } from '@statsig/web-analytics';
@@ -44,6 +44,13 @@ export function App() {
             <div className={`font-rhr text-primary`}>{pageTitle}</div>
           </h1>
           <FloatingFormValue />
+          {/* TEMP: quick reset button — remove when done */}
+          {/* <button
+            onClick={resetToDefaultConfig}
+            className="mt-2 rounded bg-red-500 px-4 py-1 text-sm text-white hover:bg-red-600"
+          >
+            Reset to Default Config
+          </button> */}
           <form className="w-full px-4" onSubmit={e => e.preventDefault()}>
             <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
               <Sections />

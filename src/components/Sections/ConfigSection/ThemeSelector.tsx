@@ -1,4 +1,5 @@
-import { Theme, useTheme } from '@/components/ThemeProvider';
+import { Theme } from '@/components/ThemeProvider';
+import { useTheme } from '@/components/useTheme';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { Computer, Moon, Sun } from 'lucide-react';
 

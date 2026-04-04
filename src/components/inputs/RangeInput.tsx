@@ -57,6 +57,7 @@ export default function RangeInput(props: ConfigurableInputProps) {
         className="w-full py-2 px-1"
         min={data.min}
         max={data.max}
+        step={data.step}
         value={[value || 0]}
         defaultValue={[data.defaultValue || 0]}
         id={data.title}
