@@ -5,7 +5,7 @@ import { Sections } from './components/Sections';
 import { CommitAndResetSection } from './components/Sections/CommitAndResetSection/CommitAndResetSection';
 import { ConfigSection } from './components/Sections/ConfigSection';
 import { ThemeProvider } from './components/ThemeProvider';
-import { useQRScoutState, resetToDefaultConfig } from './store/store';
+import { useQRScoutState } from './store/store';
 
 import { StatsigProvider, useClientAsyncInit } from '@statsig/react-bindings';
 import { runStatsigAutoCapture } from '@statsig/web-analytics';
